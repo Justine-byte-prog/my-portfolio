@@ -206,28 +206,30 @@
 
     <div class="contact-wrapper" data-aos="fade-up">
         <!-- DITO MO ILALAGAY YUNG LINK GALING SA FORMSPREE -->
-        <form action="https://formspree.io/f/xeenrypn" method="POST" class="contact-styled-box">
-            <h1>Contact <span>Me</span></h1>
-            
-            <div class="input-row">
-                <input type="text" name="First Name" placeholder="First Name" required>
-                <input type="text" name="Last Name" placeholder="Last Name" required>
-            </div>
+    <form action="https://formspree.io/f/xeenrypn" method="POST" class="contact-styled-box">
+    
+    <!-- ITO YUNG MAHALAGANG LINE PARA SA REDIRECT -->
+    <!-- Palitan mo yung 'USERNAME' at 'REPOSITORY-NAME' ng saktong link mo sa GitHub Pages -->
+    <input type="hidden" name="_next" value="https://github.com/Justine-byte-prog/my-portfolio/blob/main/thankyou.html">
 
-            <div class="input-row">
-                <input type="email" name="Email" placeholder="Email" required>
-                <input type="text" name="Mobile" placeholder="Mobile" required>
-            </div>
+    <h1>Contact <span>Me</span></h1>
+    
+    <div class="input-row">
+        <input type="text" name="First Name" placeholder="First Name" required>
+        <input type="text" name="Last Name" placeholder="Last Name" required>
+    </div>
 
-            <textarea name="Message" placeholder="Type Your Message Here..." required></textarea>
+    <div class="input-row">
+        <input type="email" name="Email Address" placeholder="Email" required>
+        <input type="text" name="Mobile Number" placeholder="Mobile" required>
+    </div>
 
-            <!-- Ito yung code para pagka-send, pupunta siya sa thankyou.html mo -->
-            <input type="hidden" name="_next" value="thankyou.html">
+    <textarea name="Message" placeholder="Type Your Message Here..." required></textarea>
 
-            <div class="btn">
-                <button type="submit">Send</button>
-            </div>
-        </form>
+    <div class="btn">
+        <button type="submit">Send</button>
+    </div>
+    </form>
     </div>
 </section>
 
